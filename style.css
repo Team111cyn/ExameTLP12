@@ -1,0 +1,133 @@
+@import url('https://fonts.cdnfonts.com/css/nulshock');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nulshock', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 14_52_35.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 20px;
+    color: #FBE4D8;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(20px);
+}
+
+.container h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.input_b {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_b input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    outline: none;
+    font-size: 15px;
+    color: #FBE4D8;
+    padding: 20px 40px 20px 20px;
+
+}
+
+.input_b input::placeholder{
+    color: #DFB6B2;
+}
+
+.input_b i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.lembrar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: -15px 0 15px;
+}
+
+.lembrar label input {
+    accent-color: #FBE4D8;
+    margin-right: 5px;
+}
+
+.lembrar a {
+    text-decoration: none;
+    color: #FBE4D8;
+}
+
+.lembrar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.btn_login {
+    width: 100%;
+    height: 50px;
+    background-color:#DFB6B2;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #190019;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 17px;
+}
+
+.btn_login:hover {
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    color: #FBE4D8;
+    transition: 0.5s;
+
+}
+
+.registrar{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 20px 0 15px;
+}
+
+.registrar label input {
+    accent-color: #FBE4D8;
+    margin-right: 5px;
+}
+
+.registrar a {
+    text-decoration: none;
+    color: #FBE4D8;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.registrar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
