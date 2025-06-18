@@ -1,0 +1,244 @@
+@import url('https://fonts.cdnfonts.com/css/nulshock');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nulshock', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #190019;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 98vw;
+    height: 98vh;
+    background: url("/IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 15_20_38.png");
+    border-radius: 20px;
+    color: #FBE4D8;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    
+}
+
+.box1{
+    width: 50vw;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 20px;
+    color: #FBE4D8;
+    padding: 30px 40px;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(20px);
+}
+.box2{
+    width: 50vw;
+    height: 100%;
+    background: transparent;
+    padding: 30px 40px;
+    margin: 2px;
+}
+
+.container h1 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.input_b {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_b input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    outline: none;
+    font-size: 15px;
+    color: #FBE4D8;
+    padding: 20px 40px 20px 20px;
+
+}
+
+.input_b input::placeholder{
+    color: #DFB6B2;
+}
+
+.input_b i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.box3 {
+    width: 100%;
+    display: flex;
+}
+
+.box4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin: 16px 10px 15px;
+    padding: 0;
+    flex-direction: column;
+    
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: auto;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: auto;
+        
+      }
+
+
+
+.dados {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin: 16px 0 15px;
+}
+.dados input {
+    width: 100%;
+    background: none;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    
+}
+.dados2 {
+    padding-top: 17px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin: 16px 0 15px;
+}
+.dados2 input {
+    width: 80%;
+    height: 40px;
+    background: none;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    margin: 10px 2px 10px;
+    color:#DFB6B2;
+    padding: 10px;
+}
+
+
+
+select {
+    appearance: none;         /* remove o estilo padrão */
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    background: none;         /* opcional, remove fundo */
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin: 10px 0 10px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    color: #FBE4D8;
+    padding: 15px;
+
+}
+select:focus {
+    background-color: #2B124C;
+    transition: 0.2s;
+}
+
+
+
+.aceitar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.aceitar label input {
+    accent-color: #FBE4D8;
+    margin-right: 5px;
+}
+
+.aceitar a {
+    text-decoration: none;
+    color: #FBE4D8;
+}
+
+.aceitar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.btn_registro {
+    width: 100%;
+    height: 50px;
+    background-color:#DFB6B2;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #190019;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 17px;
+}
+
+.btn_registro:hover {
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    color: #FBE4D8;
+    transition: 0.5s;
+
+}
+
+.voltar{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 20px 0 15px;
+}
+
+.voltar label input {
+    accent-color: #FBE4D8;
+    margin-right: 5px;
+}
+
+.voltar a {
+    text-decoration: none;
+    color: #FBE4D8;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.voltar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
