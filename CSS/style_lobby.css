@@ -1,0 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/nulshock');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nulshock', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 15_20_38.png");
+    background-size: cover;
+    background-position: center;
+}

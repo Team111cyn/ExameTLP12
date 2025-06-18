@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('./IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 14_52_35.png');
+    background: url("/IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 14_52_35.png");
     background-size: cover;
     background-position: center;
 }
