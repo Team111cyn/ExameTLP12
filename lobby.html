@@ -4,10 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/CSS/style_lobby.css">
 </head>
 <body>
     
+    <header>
+        <a href="#" class="logo">Books</a>
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="procurar">
+            <input type="text" placeholder="procurar">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    
+
+    <div class="container">
+        <div class="content active">
+            <!--<img src="" alt="" class="book-title">-->
+            <div class="book-title">
+            <h1>Titulo Ficção Científica</h1>
+            </div>
+            <h4>
+                <span>2025</span><span>112<i>pag</i></span><span>Autor</span><span>ficção científica</span>
+            </h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptas facilis eligendi consequatur iusto eaque tempora necessitatibus nam harum facere ullam rem, nihil placeat voluptatibus repellat consectetur! Eius, aliquid laboriosam.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> Read</a>
+                <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> My List</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="/IMG/lobby/livros/livro_01.jfif" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMG/lobby/livros/livro_02.jfif" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMG/lobby/livros/livro_03.jfif" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMG/lobby/livros/livro_04.jfif" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/IMG/lobby/livros/livro_06.jfif" alt="">
+                </div>
+            </div>  
+            <!--<a href="#" class="download"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Download</a> -->
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./js/script.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+
 </body>
 </html>
