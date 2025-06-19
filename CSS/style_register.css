@@ -10,54 +10,63 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background: #190019;
     background-size: cover;
     background-position: center;
 }
 
 .container{
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
     background: url("/IMG/ChatGPT\ Image\ 17\ de\ jun.\ de\ 2025\,\ 15_20_38.png");
     border-radius: 20px;
+    background-size: cover;
+    background-position: center;
     color: #FBE4D8;
     padding: 5px;
     margin: 5px;
     display: flex;
+    overflow: hidden;
     
 }
 
 .box1{
     width: 50vw;
     height: 100%;
+    box-sizing: border-box;
     background-color: transparent;
     border: 2px solid #522B5B;
     border-radius: 20px;
     color: #FBE4D8;
-    padding: 30px 40px;
+    padding: 20px;
     margin: 2px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     backdrop-filter: blur(20px);
+    overflow: hidden;
+    
 }
 .box2{
     width: 50vw;
     height: 100%;
+    box-sizing: border-box;
     background: transparent;
     padding: 30px 40px;
     margin: 2px;
+    
 }
 
 .container h1 {
     font-size: 34px;
     text-align: center;
+    padding: 0;
 }
 
 .input_b {
     position: relative;
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    height: 30px;
+    margin: 20px 0;
 }
 
 .input_b input {
@@ -70,6 +79,7 @@ body{
     font-size: 15px;
     color: #FBE4D8;
     padding: 20px 40px 20px 20px;
+    position: relative;
 
 }
 
@@ -81,7 +91,7 @@ body{
     position: absolute;
     right: 20px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-10%);
     font-size: 20px;
 
 }
@@ -122,22 +132,23 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    margin: 16px 0 15px;
+    margin: 10px;
 }
 .dados input {
     width: 100%;
+    margin-top: 50px;
     background: none;
     border: 2px solid #522B5B;
     border-radius: 40px;
     
 }
 .dados2 {
-    padding-top: 17px;
+    padding-top: 12px;
     width: 200px;
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    margin: 16px 0 15px;
+    margin: 10px;
 }
 .dados2 input {
     width: 80%;
@@ -161,13 +172,13 @@ select {
     display: flex;
     flex-direction: column;
     font-size: 11px;
-    margin: 10px 0 10px;
+    margin-top: 10px;
     outline: none;
     background-color: transparent;
     border: 2px solid #522B5B;
     border-radius: 40px;
     color: #FBE4D8;
-    padding: 15px;
+    padding: 10px;
 
 }
 select:focus {
@@ -208,7 +219,7 @@ select:focus {
     color: #190019;
     font-weight: 600;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: 17px;
+    margin-top: 10px;
 }
 
 .btn_registro:hover {
@@ -223,7 +234,7 @@ select:focus {
     display: flex;
     justify-content: center;
     font-size: 12px;
-    margin: 20px 0 15px;
+    margin: 5px;
 }
 
 .voltar label input {
