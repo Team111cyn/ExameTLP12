@@ -52,12 +52,26 @@ header {
     color: #FBE4D8;
     letter-spacing: 1px;
     font-weight: 800;
+    display: flex;
+
+}
+.logo i {
+    margin-left: 20px;
+    padding: 0;
+    position: relative;
+    top: 13px;
+    font-size: 20px;
+    
+}
+
+.logo i:hover {
+    color: var(--primary);
 }
 
 .nav {
     display: flex;
     width: 100%;
-    margin-left: 110px;
+    margin-left: 30px;
 
 }
 
@@ -81,7 +95,7 @@ header {
 
 .search {
     display: flex;
-    right: 30px;
+    right: 10px;
     margin: 0 10px;
     position: absolute;
     width: 200px;
@@ -336,3 +350,7 @@ header {
    border: 3px solid #522B5B;
    border-radius: 30px;
 }
+
+
+
+
