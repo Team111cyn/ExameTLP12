@@ -76,7 +76,7 @@ body{
     cursor: pointer;
 }
 
-.logo {
+.option {
     font-size: 30px;
     left: 0;
     top: 0;
@@ -88,15 +88,15 @@ body{
 
 }
 
-.logo i {
+.option i {
     margin: 5px;
 }
 
-.logo i:hover {
+.option i:hover {
     color: var(--primary);
 }
 
-.logo i:nth-child(2) {
+.option i:nth-child(2) {
    display: none;
 }
 
@@ -111,12 +111,12 @@ input:checked ~ .nav  {
     
 }
 
-input:checked ~ .logo i:nth-child(2) {
+input:checked ~ .option i:nth-child(2) {
     display: inline;
     
     
 }
-input:checked ~ .logo i:nth-child(1) {
+input:checked ~ .option i:nth-child(1) {
     display: none;
     
     
