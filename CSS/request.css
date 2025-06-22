@@ -19,7 +19,7 @@ body{
     min-height: 100vh;
     background: 
     linear-gradient(to left, #2b124c9c, #190019b0), /* camada escura */
-    url("/IMG/lobby/fundo/fundo_03.jpg"); /* imagem de fundo */
+    url("/IMG/lobby/fundo/fundo-05.jpg"); /* imagem de fundo */
     background-size: cover;
     background-position: center;
     animation: degrade_background 7s infinite alternate;
@@ -130,8 +130,9 @@ input {
 
 .box1 {
     width: 100%;
-    height: 11%;
-    margin: 0;
+    height: 35%;
+    border-bottom: 2px solid #522B5B;
+    margin-bottom: 10px;
     
     
 }
@@ -164,46 +165,29 @@ input {
     font-size: 20px;
 }
 
-.button {
+.top {
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
-.button a {
+.top input:nth-child(1) {
     position: relative;
     display: inline-block;
-    margin-left: 0;
-    margin-top: 2px;
-    background-color: var(--primary);
-    color: #FBE4D8;
-    text-decoration: none;
-    padding: 6px 20px;
-    border-radius: 20px;
-    border: 2px solid #522B5B;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.5s;
-    cursor: pointer;
+    right: 2000px;
+    z-index: 1;
+
+   
 }
 
-
-.button a:nth-child(1) {
-   background: rgb(0, 0, 0, 0.5);
-   border: 2px solid rgb(82, 43, 91, 0.2);
-}
-
-.button a:hover:nth-child(1) {
-    background-color: var(--primary);
-    border: 2px solid #522B5B;
-}
 
 .search {
     display: flex;
-    right: 10px;
+    flex-direction: column;
+    right: 20px;
     margin-top: 2px;
     position: absolute;
-    width: 200px;
+    width: 300px;
     height: 30px;
     background-color: transparent;
     border: 2px solid #522B5B;
@@ -234,6 +218,7 @@ input {
     
 }
 
+
 .search i {
     position: absolute;
     left: 13px;
@@ -243,13 +228,63 @@ input {
     border-right: 2px solid #522B5B;
 }
 
-/*-------button---------*/
+.search2 {
+    display: flex;
+    flex-direction: column;
+    left: 20px;
+    margin-top: 2px;
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    outline: none;
+    font-size: 15px;
+    color: #FBE4D8;
+    padding: 0 10px 0 45px !important;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.search2 input {
+    display: inline;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -35%;
+    font-size: 15px;
+    color: #FBE4D8;
+    padding: 0;
+    
+    
+}
+
+
+.search2 input::placeholder {
+    color: #FBE4D8;
+    
+    
+    
+}
+
+
+.search2 i {
+    position: absolute;
+    left: 13px;
+    padding-right: 6px;
+    top: 50%;
+    transform: translateY(-59%);
+    border-right: 2px solid #522B5B;
+}
+
+/*-------top---------*/
 
 
 .box2 {
     width: 100%;
     height: 90%;
-    margin-top: 30px;
+    margin-top: 10px;
     overflow: auto;
    
 }
@@ -261,6 +296,7 @@ input {
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid #522B5B;
+    
 }
 
 .table_style thead {
@@ -275,6 +311,7 @@ input {
     border-left: 1px solid #522B5B;
     border-right: 1px solid #522B5B;
     text-align: center;
+    
 }
 
 .table_style tbody tr {
@@ -282,10 +319,38 @@ input {
     
 }
 
-.table_style tbody tr:hover {
+.table_style tbody input {
+    display: inline;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    font-size: 15px;
+    
+    
+}
+.table_style tbody input::placeholder {
+    color: #190019;
+    outline: none;
+}
+
+.table_style .quantity {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #522B5B;
+    border-radius: 40px;
+    outline: none;
+    font-size: 15px;
     color: #FBE4D8;
-    cursor: pointer;
-    box-shadow: rgba(180, 84, 243, 0.25) 0px 30px 60px -12px inset, rgba(76, 3, 105, 0.3) 0px 18px 36px -18px inset;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
 }
 
 .table_style tbody tr:nth-child(even) {
@@ -314,6 +379,37 @@ input {
   border: 2px solid #522B5B; 
 }
 
+.button {
+    display: flex;
+    width: 200px;
+    justify-content: end;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    color: #FBE4D8;
+    text-decoration: none;
+    border-radius: 20px;
+    background: rgb(0, 0, 0, 0.5);
+    border: 2px solid rgb(82, 43, 91, 0.2);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary);
+    border: 2px solid #522B5B;
+}
+
 @media screen and (max-width: 950px) {
     
     .search input {
@@ -331,9 +427,6 @@ input {
     }
      
 
-    .search {
-        width: 300px;
-    }
 
 
 
@@ -442,4 +535,14 @@ input:checked ~ .option i:nth-child(1) {
     
 }
    
+}
+
+@media screen and (max-width: 705px) {
+
+    .search {
+        width: 200px;
+    }
+    .search2 {
+        width: 200px;
+    }
 }

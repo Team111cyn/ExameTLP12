@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css"">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./CSS/form.css">
+</head>
+<body>
+     <header>
+        
+        <a href="#" class="logo">Books</a>
+        <input type="checkbox" id="option-button">
+        <label for="option-button" class="option">
+        <i id="option-button" class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+        </label>
+        <ul class="nav">
+            <li><a href="lobby.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="return.html">return list</a></li>
+            <li><a href="#">Request</a></li>
+            <li><a href="queries.html">Queries</a></li>
+            <li><a href="my_list.html">My List</a></li>
+            <li><a href="add_book.html">add book</a></li>
+            <li><a href="#">add user</a></li>
+        </ul>
+        <div class="nav2">
+        <ul>
+            <li><a href="return.html">return list</a></li>
+            <li><a href="#">Request</a></li>
+            <li><a href="queries.html">Queries</a></li>
+            <li><a href="my_list.html">My List</a></li>
+            <li><a href="add_book.html">add book</a></li>
+            <li><a href="#">add user</a></li>
+        </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box1">
+            <div class="text">
+                <h1>User info <i class="fa fa-database" aria-hidden="true"></i></h1>
+            </div>
+            <div class="button">
+                <a href="#"><i class="fa fa-check" aria-hidden="true"></i> confirm</a>
+                <a href="#"><i class="fa fa-ban" aria-hidden="true"></i> cancel</a>
+                
+            </div>
+        </div>
+        <div class="box2">
+            <div class="input_container">
+            <div class="input_b">
+                <input placeholder="Name" type="text">
+                <i class="fa fa-book" aria-hidden="true"></i></i>
+            </div>
+            <div class="input_b">
+                <input placeholder="Autor" type="text">
+                <i class="bx bxs-user"></i>
+            </div>
+            </div>
+            <div class="input_container">
+            <div class="input_b">
+                <input placeholder="genre" type="text">
+                <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </div>
+            <div class="input_b">
+                <input placeholder="pages" type="text">
+                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            </div>
+            </div>
+            <div class="box3">
+                <div class="box4">
+                <div class="dados">
+                    <label for="">book status</label>
+                    <select class="custom-select">
+                        <option value="">Selecionar</option>
+                        <option value="Administrador">Available</option>
+                        <option value="Balconista">unavailable</option>
+
+                    </select>
+                </div>
+                
+                </div>
+                <div class="dados2">
+                    <label for="">Release Date</label>
+                    <div class="d">
+                    <input type="date">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
